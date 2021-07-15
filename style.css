@@ -1,0 +1,188 @@
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/*==================
+Header CSS
+====================
+*/
+.header-area{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #2D25A0;
+  padding: 4% 5%;
+}
+.header-left :hover{
+  width: 80px;
+  height: 80px;
+  transform: rotate(180deg);
+  transition: 5s linear;
+} 
+.header-left{
+  padding: 10px 50px 20px;
+}
+.header-title{
+  font-size: 64px;
+  color: #fff;
+}
+a.header-btn{
+  text-decoration: none;
+}
+.header-btn{
+  padding: 9px 30px 10px;
+  margin-left: 5px;
+  font-size: 20px;
+  background-color: #E02C6D;
+  color: #ffffff;
+}
+.btn-icon{
+  padding-left: 10px;
+}
+.header-right{
+  float: right;
+  width: 50%;
+}
+.header-right img{
+  width: 556px;
+  height: 438px;
+  padding: 20px;
+}
+.bg{
+  background-color: #FFFFFF;
+}
+.player-profile{
+  border: 2px solid #ffffff;
+  padding: 16px;
+  box-shadow: 0 6px 10px #b5a2a2;
+  margin: 12px;
+}
+.players-info{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 4%;
+  margin: 6% 44% 0 8%;
+}
+.thumbnail img{
+  width: 300px;
+  height: 256px;
+}
+.heighlight-area{
+  display: flex;
+  padding-left: 25px;
+  margin-top: 5%;
+}
+.highlight-part{
+  width: 80%;
+  padding: 20px;
+  margin-left: 5%;
+  font-size: 20px;         
+}
+.highlight-part img{
+  width: 567px;
+  height: 427px;
+}
+.watch-more{
+  background-color: rgb(239, 250, 222);
+  padding: 25px;
+  text-align: center;
+}
+.watch-more h1{
+  font-size: 50px;
+  margin: 10px;
+}
+.upcoming-match{
+  background-image: url(img/upcoming.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 440px;
+  padding-top: 10%;
+  text-align: center;
+  color: #b3d81de0;
+  font-size: 40px;
+}
+input[type=text],[type=submit]{
+  padding: 20px;
+  border: 1px solid greenyellow;
+
+}
+
+/* =============================
+Footer CSS
+================================
+*/
+
+footer{
+  text-align: center;
+  padding: 28px;
+  margin: 45px;
+}
+.footer-icon{
+  font-size: 30px;
+  padding: 15px;
+  margin:5px
+}
+.footer-logo img{
+  width: 483px;
+  height: 110px;
+}
+
+/* =============================
+Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels 
+================================
+*/
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
+  .header-area{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    position: absolute;
+
+  }
+    .players-info{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 4%;
+      margin: 6% 44% 0 8%;
+      
+    }
+    .heighlight-area{
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 20px;
+      margin-top: 5%;
+    }
+    .footer-logo img{
+      width: 100%;
+      height: auto;
+    }
+}
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
+  .header-area{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    position: absolute;
+
+  }
+    .players-info{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 4%;
+      margin: 6% 44% 0 8%;
+      
+    }
+    .heighlight-area{
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 20px;
+      margin-top: 5%;
+    }
+    .footer-logo img{
+      width: 100%;
+      height: auto;
+    }
+}
+
